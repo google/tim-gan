@@ -19,17 +19,16 @@ TODO: Citation
 
 ## Introduction
 In this paper, we study a new task that allows users to edit an input image using
-
 language instructions.
 
-<img src="images/teaser.png" alt="Problem Overview" width="500"/>
+![Problem Overview][images/teaser.png]
 
 The key idea is to treat language as neural operators to locally modify the image feature.
 To this end, our model decomposes the generation process into finding where (spatial region)
 and how (text operators) to apply modifications. We show that the proposed model performs
 favorably against recent baselines on three datasets.
 
-<img src="images/overview.png" alt="Method" width="500"/>
+![Method][images/overview.png]
 
 ## Installation
 
