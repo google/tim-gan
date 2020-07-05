@@ -15,7 +15,7 @@
 
 import os
 import torch
-from models import networks
+from third_party import networks
 from models import text_models
 import models.operator as op
 from models.localizer import LocalizerAttn
@@ -53,8 +53,8 @@ class LocalGAN(torch.nn.Module):
     self.localizer = LocalizerAttn(img_dim=self.img_E.output_dim, text_dim=512)
 
     # operator
-    if opts.operator == 'adain':
-      self.operator = op.AdaIN(n_res=opts.num_adablock, dim=self.img_E.output_dim, text_dim=512, temperature=opts.temperature)
+    if opts.operator == 'adaroute':
+      self.operator = op.Adaptive_Routing(n_res=opts.num_adablock, dim=self.img_E.output_dim, text_dim=512, temperature=opts.temperature)
     else:
       raise Exception('no such operator %s' % (opts.operator))    
 

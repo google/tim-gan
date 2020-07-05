@@ -14,10 +14,10 @@
 # ==============================================================================
 
 import torch
-from models import networks
+from third_party import networks
 import torch.nn.functional as F
 
-class AdaIN(torch.nn.Module):
+class Adaptive_Routing(torch.nn.Module):
   def __init__(self, n_res, dim, text_dim, temperature=1.):
     super(AdaIN, self).__init__()
     #layer1

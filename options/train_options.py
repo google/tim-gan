@@ -40,10 +40,10 @@ class TrainOptions():
     self.parser.add_argument('--no_tensorboard', action='store_true', help='disable tensorboard visualization')
 
     # model related
-    self.parser.add_argument('--operator', type=str, default='adain', help='adain/concate')
+    self.parser.add_argument('--operator', type=str, default='adaroute', help='adaptive routing')
     self.parser.add_argument('--temperature', type=float, default=1., help='softmax temperature in operator')
     self.parser.add_argument('--w_gate', type=float, default=1., help='weight of the gate variance loss')
-    self.parser.add_argument('--num_adablock', type=int, default=4, help='Number of adain res blocks')
+    self.parser.add_argument('--num_adablock', type=int, default=4, help='Number of adaptive res blocks')
     self.parser.add_argument('--gan_mode', type=str, default='lsgan', help='gan_mode')
     self.parser.add_argument('--pretrain', type=str, default='', help='load model file pre-trained with reconstruction')
 

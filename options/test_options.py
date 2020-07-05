@@ -38,9 +38,9 @@ class TestOptions():
     self.parser.add_argument('--result_dir', type=str, default='../output/TIMGAN', help='path for saving display results')
 
     # model related
-    self.parser.add_argument('--operator', type=str, default='adain', help='adain')
+    self.parser.add_argument('--operator', type=str, default='adaroute', help='adaptive routing')
     self.parser.add_argument('--temperature', type=float, default=1., help='softmax temperature in operator')
-    self.parser.add_argument('--num_adablock', type=int, default=4, help='Number of adain res blocks')
+    self.parser.add_argument('--num_adablock', type=int, default=4, help='Number of adaptive res blocks')
     self.parser.add_argument('--which_epoch', type=int, default=30, help='number of epoch to be loaded')
 
   def parse(self):

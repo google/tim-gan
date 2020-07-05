@@ -42,6 +42,7 @@ pip install -r requirements.txt
 To reproduce the results reported in the paper, you would need an V100 GPU.
 
 ## Download datasets and pretrained model
+The original Clevr dataset we used is from this [external website](https://github.com/google/tirg). The original Abstract Scene we used is from this [external website](https://github.com/Maluuba/GeNeVA_datasets/)
 Processed datasets (Clevr and Abstract Scene) and pretrained models can be downloaded
 from [here](https://storage.googleapis.com/bryanzhang-bucket/dataset_n_models.tar). Extract the tar:
 ```
@@ -56,7 +57,7 @@ Once the dataset and the pretrained model are downloaded,
     ```bash
     bash run_test.sh
     ```
-    Please switch parameters in the script for different datasets.
+    Please switch parameters in the script for different datasets. Testing parameters for Clevr and Abstract Scene datasets are already configured in the script.
 
 2. The outputs are at `../output/`.
 
@@ -78,7 +79,7 @@ bash run_pretrain.sh
 bash run_train.sh
 ```
 
-There are many options you can specify. We provide parameters for Clevr and Abstract Scene datasets in the script.
+There are many options you can specify. Training parameters for Clevr and Abstract Scene datasets are already configured in the script.
 
 Tensorboard logs are stored at `[../checkpoints_local/TIMGAN/tfboard]`.
 
@@ -89,7 +90,19 @@ Testing is similar to testing pretrained models.
 ```bash
 bash run_test.sh
 ```
+Testing parameters for Clevr and Abstract Scene datasets are already configured in the script.
 
+## Evaluation
+
+The FID score is computed using the pytorch implementation [here](https://github.com/mseitzer/pytorch-fid).
+Image retrieval script will be released soon.
+
+## Pretrained Model Performance
+
+|                | FID  | RS@1     | RS@5     |
+|----------------|------|----------|----------|
+| Clevr          | 33.0 | 95.9±0.1 | 97.8±0.1 |
+| Abstract Scene | 35.1 | 35.4±0.2 | 58.7±0.1 |
 
 ## Code Structure
 

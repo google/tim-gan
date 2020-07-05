@@ -14,7 +14,7 @@
 # ==============================================================================
 
 import torch
-from models import networks
+from third_party import networks
 
 class LocalizerAttn(torch.nn.Module):
   def __init__(self, img_dim, text_dim, n_res=2):
