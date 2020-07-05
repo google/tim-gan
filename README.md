@@ -21,7 +21,7 @@ TODO: Citation
 In this paper, we study a new task that allows users to edit an input image using
 language instructions.
 
-![Problem Overview](images/teaser.png)
+![Problem Overview](images/teaser_sm.png)
 
 The key idea is to treat language as neural operators to locally modify the image feature.
 To this end, our model decomposes the generation process into finding where (spatial region)
