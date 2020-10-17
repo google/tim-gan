@@ -43,15 +43,15 @@ To reproduce the results reported in the paper, you would need an V100 GPU.
 
 ## Download datasets and pretrained model
 The original Clevr dataset we used is from this [external website](https://github.com/google/tirg). The original Abstract Scene we used is from this [external website](https://github.com/Maluuba/GeNeVA_datasets/)
-Processed datasets (Clevr and Abstract Scene) and pretrained models can be downloaded
-from [here](https://storage.googleapis.com/bryanzhang-bucket/dataset_n_models.tar). Extract the tar:
+Pretrained models (Clevr and Abstract Scene) can be downloaded
+from [here](https://storage.googleapis.com/bryanzhang-bucket/checkpoints.tar). Extract the tar:
 ```
-tar -xvf dataset_n_models.tar -C ../
+tar -xvf checkpointss.tar -C ../
 ```
 
 ## Testing Using Pretrained Model
 
-Once the dataset and the pretrained model are downloaded,
+Once the dataset is preprocessed and the pretrained model is downloaded,
 
 1. Generate images using the pretrained model.
     ```bash
@@ -112,3 +112,6 @@ Image retrieval script will be released soon.
 - `models/networks.py`: defines the basic modules for the architecture.
 - `options/`: options.
 - `dataset/`: defines the class for loading the dataset.
+
+## Question
+Please contact bryanzhang@google.com if you need the preprocessed data or the Cityscapes pretrained model.
