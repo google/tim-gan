@@ -42,7 +42,8 @@ pip install -r requirements.txt
 To reproduce the results reported in the paper, you would need an V100 GPU.
 
 ## Download datasets and pretrained model
-The original Clevr dataset we used is from this [external website](https://github.com/google/tirg). The original Abstract Scene we used is from this [external website](https://github.com/Maluuba/GeNeVA_datasets/)
+The original Clevr dataset we used is from this [external website](https://github.com/google/tirg). The original Abstract Scene we used is from this [external website](https://github.com/Maluuba/GeNeVA_datasets/).
+
 Pretrained models (Clevr and Abstract Scene) can be downloaded
 from [here](https://storage.googleapis.com/bryanzhang-bucket/checkpoints.tar). Extract the tar:
 ```
@@ -65,7 +66,7 @@ Once the dataset is preprocessed and the pretrained model is downloaded,
 
 New models can be trained with the following commands.
 
-1. Prepare dataset. Processed datasets can be downloaded from the link above.
+1. Prepare dataset. Please contact the author if you need the processed datasets.
 If you are to use a new dataset, please follow the structure of the provided
 datasets, which means you need paired data (input image, input text, output image)
 
