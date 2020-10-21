@@ -45,7 +45,7 @@ To reproduce the results reported in the paper, you would need an V100 GPU.
 The original Clevr dataset we used is from this [external website](https://github.com/google/tirg). The original Abstract Scene we used is from this [external website](https://github.com/Maluuba/GeNeVA_datasets/).
 
 Pretrained models (Clevr and Abstract Scene) can be downloaded
-from [here](https://storage.googleapis.com/bryanzhang-bucket/checkpoints.tar). Extract the tar:
+from [here](https://storage.googleapis.com/tim-gan-paper/checkpoints.tar). Extract the tar:
 ```
 tar -xvf checkpointss.tar -C ../
 ```
